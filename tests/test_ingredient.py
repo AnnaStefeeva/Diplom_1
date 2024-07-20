@@ -13,6 +13,7 @@ class TestIngredient:
         ingredient = Ingredient(INGREDIENT_TYPE_SAUCE, 'Соус Spicy-X', 90)
 
         assert ingredient.get_price() == 90
+
     @pytest.mark.parametrize(
         'ingredient_type,name,price',
         [
